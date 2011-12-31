@@ -1,8 +1,8 @@
 :javascript
   // Set the globals used by chat.js
   channel = "#{@chat.channel}";
-  chat_id = "#{@chat.id}";
-  user_id = "#{@user.id}";
+  chat_id = #{@chat.id};
+  user_id = #{@user.id};
   $(document).ready(function() {
     window_chat();
   });
