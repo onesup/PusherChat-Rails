@@ -16,7 +16,7 @@
     %a.right.tiptip{:href => "#", :title => "<b>How to Invite...</b><br />Simple share the URL of this page with anybody else to invite them to the chatter!"} Invite
     %span#loading
   %ul#messages
-    - @messages.each do |message|
+    - @chat.messages.each do |message|
       - user = ChatUser.find(message.user_id)
       <li
       - if user.id == @user.id
