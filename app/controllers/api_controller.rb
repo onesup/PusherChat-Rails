@@ -27,10 +27,9 @@ class ApiController < ApplicationController
     message.user_id = user.id
     message.message = params[:message]
     
-    payload = message.attributes
-    payload[:user] = user.attributes
-    
     if message.save
+      payload = message.attributes
+      payload[:user] = user.attributes
       Pusher["presence-" + chat.channel].trigger('send_message', payload)
       render :text => "sent"
     else
