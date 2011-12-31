@@ -31,14 +31,17 @@ scrollToTheTop = ->
 replaceURLWithHTMLLinks = (text) ->
   exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/g
   text.replace exp, "<a href='$1' target='_blank'>$1</a>"
-hasFocus = true
 people = []
-window.onblur = ->
-  hasFocus = false
 
-window.onfocus = ->
-  hasFocus = true
-  document.title = "Pusher Chat"
+hasFocus = true
+
+window_chat = ->
+  window.onblur = ->
+    hasFocus = false
+
+  window.onfocus = ->
+    hasFocus = true
+    document.title = "Pusher Chat"
 
 is_typing_currently = false
 browser_audio_type = ""

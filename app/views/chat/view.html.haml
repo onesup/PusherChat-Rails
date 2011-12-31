@@ -3,6 +3,9 @@
   channel = "#{@chat.channel}";
   chat_id = "#{@chat.id}";
   user_id = "#{@user.id}";
+  $(document).ready(function() {
+    window_chat();
+  });
 = javascript_include_tag "http://js.pusherapp.com/1.9/pusher.min.js"
 #wrapper
   .header
