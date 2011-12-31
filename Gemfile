@@ -4,6 +4,9 @@ gem 'rails'
 
 gem 'rails_autolink'
 
+gem 'haml'
+gem 'haml-rails'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
