@@ -87,9 +87,9 @@ $(document).ready ->
         unless browser_audio_type is ""
           pop = document.createElement("audio")
           if browser_audio_type is "mpeg"
-            pop.src = "/images/pop.mp4"
+            pop.src = "/sounds/pop.mp4"
           else
-            pop.src = "/images/pop." + browser_audio_type
+            pop.src = "/sounds/pop." + browser_audio_type
           unless pop.src is ""
             pop.load()
             pop.play()
