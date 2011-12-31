@@ -31,7 +31,16 @@ GEM
       multi_json (~> 1.0)
     arel (2.2.1)
     builder (3.0.0)
+    coffee-rails (3.1.1)
+      coffee-script (>= 2.2.0)
+      railties (~> 3.1.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.2.0)
     erubis (2.7.0)
+    execjs (1.2.13)
+      multi_json (~> 1.0)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -50,6 +59,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    mysql2 (0.3.11-x86-mingw32)
     polyglot (0.3.3)
     pusher (0.8.5)
       multi_json (~> 1.0)
@@ -85,6 +95,12 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     ruby-hmac (0.4.0)
+    sass (3.1.12)
+    sass-rails (3.1.5)
+      actionpack (~> 3.1.0)
+      railties (~> 3.1.0)
+      sass (~> 3.1.10)
+      tilt (~> 1.3.2)
     signature (0.1.2)
       ruby-hmac
     sprockets (2.0.3)
@@ -99,16 +115,23 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.31)
+    uglifier (1.2.1)
+      execjs (>= 0.3.0)
+      multi_json (>= 1.0.2)
 
 PLATFORMS
   ruby
   x86-mingw32
 
 DEPENDENCIES
+  coffee-rails (~> 3.1.1)
   haml
   haml-rails
   jquery-rails
+  mysql2
   pusher
   rails
   rails_autolink
+  sass-rails (~> 3.1.5)
   sqlite3
+  uglifier (>= 1.0.3)

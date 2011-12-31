@@ -2,16 +2,25 @@ source 'http://rubygems.org'
 
 gem 'rails'
 
-gem 'rails_autolink'
-
-gem 'haml'
-gem 'haml-rails'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'mysql2'
-gem 'sqlite3'
+group :development do
+#  gem 'thin'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'mysql2'
+end
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.1.5'
+  gem 'coffee-rails', '~> 3.1.1'
+  gem 'uglifier', '>= 1.0.3'
+end
 
 # Use jQuery-Rails
 gem 'jquery-rails'
@@ -38,6 +47,11 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+gem 'rails_autolink'
+
+gem 'haml'
+gem 'haml-rails'
 
 # Pusher Gem
 gem 'pusher'
