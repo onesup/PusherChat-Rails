@@ -1,10 +1,10 @@
 PusherChat::Application.routes.draw do
   
   root :to => 'index#index'
-  
-  match "/chat/:id" => "chat#view"
-  match "/new" => "chat#new"
-  
+
+  match "/chat/new" => "chats#new"
+  match "/chat/:id" => "chats#view"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
