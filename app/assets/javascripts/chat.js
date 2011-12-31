@@ -33,7 +33,7 @@ $(document).ready(function()
     // Increment the number of people in the room when you successfully subscribe to the room
     presenceChannel.bind('pusher:subscription_succeeded', function(member_list){
         updateCount(member_list.count);
-    })
+    });
 
     // When somebody joins, pop a note to tell the user
     presenceChannel.bind('pusher:member_added', function(member) {
