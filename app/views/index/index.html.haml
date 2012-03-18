@@ -1,0 +1,37 @@
+#wrapper
+  .header
+    #title Pusher Chat
+    #beta-bookmark.tiptip{:title => "<b>I'm in Beta!</b><br />Please email any bugs you find to tarnfeld[at]me.com! Happy chatting."} It's only a beta!
+  .inner
+    %p
+      A real-time chat web app powered by
+      = succeed "," do
+        %a{:href => "http://pusherapp.com/", :target => "_blank"} Pusher
+      built by
+      = succeed "." do
+        %a{:href => "http://tarnfeld.com/", :target => "_blank"} Me
+      = succeed "To" do
+        %br/
+      start a new chat, click below.
+    %p
+      This is my first
+      %b Ruby on Rails
+      web application so please email any bugs you find to tarnfeld [at] me.com for me to take a look at and learn from. Thanks.
+    = link_to({:controller => "chat", :action => "new"}, {:class => "button"}) do
+      %button New Chat
+    %h4.help With help from...
+    %ul.help
+      %li
+        %a{:href => "http://twitter.com/vangenie/", :target => "_blank"} Leonard Schwarz
+        (Design/UI Tweaks)
+      %li
+        %a{:href => "http://twitter.com/wildfalcon/", :target => "_blank"} Laurie Young
+        (Ruby &amp; Rails Help)
+      %li
+        %a{:href => "http://forrst.com/posts/Hey_Forrsters_I_started_learning_Ruby_Rails-Cv0", :target => "_blank"} Forrst Members
+        (Awesome Comments!)
+      %li
+        %a{:href => "http://drewwilson.com/", :target => "_blank"} Drew Wilson
+        (For his jQuery
+        %a{:href => "http://code.drewwilson.com/entry/tiptip-jquery-plugin", :target => "_blank"} tipTip
+        plugin!)

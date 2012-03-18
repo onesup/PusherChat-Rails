@@ -1,4 +1,4 @@
-class ApiController < ApplicationController
+class ApisController < ApplicationController
 
   def update_nickname
     if params[:user_id] != nil && params[:nickname] != nil
