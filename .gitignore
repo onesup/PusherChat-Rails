@@ -4,3 +4,4 @@ log/*.log
 tmp/**/*
 config/initializers/pusher.rb
 public/assets/application*
+config/*.yml

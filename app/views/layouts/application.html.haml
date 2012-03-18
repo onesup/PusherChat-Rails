@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Pusher Chat
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    %script{:charset => "utf-8", :type => "text/javascript"}
+      var PUSHER_KEY = '#{Pusher.key}'
+  %body
+    = yield
+    #footer
+      %p
+        Pusher Chat is proudly powered by
+        = succeed "." do
+          %a{:href => "http://pusherapp.com/", :target => "_blank"} Pusher App
+        Created by
+        = succeed "." do
+          %a{:href => "http://tarnfeld.com/", :target => "_blank"} Tom Arnfeld
