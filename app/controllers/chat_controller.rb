@@ -16,7 +16,7 @@ class ChatController < ApplicationController
     if(params[:id] != nil)
       @chat = Chat.find(Tiny::untiny(params[:id]))
       @user = ChatUser.user(session)
-      @messages = Message.find(:all, :conditions => ["chat_id = ?", @chat.id.to_s])
+      @messages = Message..where(:chat_id => @chat.id.to_s).all
     else
       redirect_to :controller => 'index', :action => 'index'
     end
