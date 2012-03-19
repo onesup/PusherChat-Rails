@@ -1,14 +1,14 @@
 development:
-  app_id: 0000
-  key: 0000
-  secret: 0000
+  app_id: 00000
+  key: 00000
+  secret: 00000
 
 production:
-  app_id: 0000
-  key: 0000
-  secret: 0000
+  app_id: 00000
+  key: 00000
+  secret: 00000
 
 test:
-  app_id: 0000
-  key: 0000
-  secret: 0000
+  app_id: 00000
+  key: 00000
+  secret: 00000

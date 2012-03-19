@@ -17,7 +17,7 @@
       This is my first
       %b Ruby on Rails
       web application so please email any bugs you find to tarnfeld [at] me.com for me to take a look at and learn from. Thanks.
-    = link_to({:controller => "chat", :action => "new"}, {:class => "button"}) do
+    = link_to(chat_new_path, {:class => "button"}) do
       %button New Chat
     %h4.help With help from...
     %ul.help
